@@ -1,0 +1,307 @@
+/* styles.css */
+
+.hero-section {
+    background-image: url('jumbo.png');
+    background-size: cover;
+    background-position: center;
+    height: 75vh; /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.welcome-section, .difference-section, .customized-solutions-section, .trusted-expertise-section, .visit-us-section {
+    padding: 60px 0;
+}
+
+h2.display-4 {
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: #333; /* Or any color you wish to use */
+}
+
+p.text-center {
+    margin-bottom: 30px;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1020; /* Higher than the sticky-top value in Bootstrap */
+    background-color:#191919
+}
+
+/* Style for the underline effect */
+.navbar-nav .nav-link {
+    position: relative;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px; /* Adjust as needed based on the height of your navbar */
+    left: 0;
+    width: 0;
+    height: 2px; /* Thickness of the underline */
+    background-color: #ff0000; /* Color of the underline */
+    transition: width 0.3s;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+.navbar-nav .nav-link.active::after {
+    width: 100%;
+}
+
+/* Adjusting padding for nav-link to control the spacing */
+.navbar-nav .nav-link {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+/* More custom styles can be added as needed to match the design. */
+.carousel-item {
+    position: relative;
+    text-align: center;
+    background: black; /* Fallback if image doesn't load */
+}
+
+.carousel-caption {
+    bottom: 30%; /* Adjust based on your design */
+    background: rgba(0, 0, 0, 0); /* Dark transparent overlay */
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.carousel-caption .slider-logo {
+    width: 400px; /* Adjust based on your logo's size */
+    margin-bottom: 1rem;
+}
+
+.carousel-caption h5 {
+    font-size: 2.5rem; /* Adjust the font size as needed */
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.carousel-caption p {
+    font-size: 1.2rem; /* Adjust the font size as needed */
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(100%);
+}
+
+/* Ensure full width */
+.carousel, 
+.carousel-inner, 
+.carousel-item, 
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+.welcome-section {
+    position: relative;
+    padding: 50px 0;
+}
+
+.welcome-text h2 {
+    color: #000; /* Replace with the color you want */
+    font-size: 2.5rem; /* Replace with the correct font size */
+}
+
+.welcome-text p {
+    color: #666; /* Replace with the color you want */
+    line-height: 1.6;
+}
+
+.scroll-to-top {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff0000; /* Replace with your brand color */
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 20px; /* Adjust as necessary */
+    cursor: pointer;
+    display: none; /* Hide button initially; use JavaScript to show when needed */
+}
+
+.scroll-to-top:hover {
+    background-color: #dd0000; /* Darker shade for hover effect */
+}
+
+/* New CSS class for equal-height images */
+.img-fluid.equal-height {
+    height: 100%; /* This will make the images stretch to the full height of the parent */
+    object-fit: cover; /* This will cover the area of the parent, potentially cropping the image */
+  }
+  
+  /* Existing CSS for the no-gutters class */
+  .no-gutters > [class^="col-"],
+  .no-gutters > [class*=" col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .service-section {
+    background: url('image.jpg') no-repeat center center/cover;
+    padding: 100px 0; /* Adjust the padding to fit your design */
+    color: #ffffff; /* Text color */
+    text-align: center; /* Center align the text */
+    position: relative; /* For positioning elements inside */
+}
+
+.service-content h2 {
+    font-size: 3rem; /* Large font size for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+    text-transform: uppercase; /* UPPERCASE text */
+    letter-spacing: -1.2px; /* Custom letter spacing */
+    font-family: 'Lexend Zetta', sans-serif; /* Custom font family */
+}
+
+.btn-primary {
+    background-color: #ff6c00; /* Custom button color */
+    border: none;
+    padding: 15px 30px; /* Button padding */
+    font-size: 1rem; /* Button text size */
+    transition: background-color 0.3s ease; /* Transition for hover effect */
+}
+
+.btn-primary:hover {
+    background-color: #e65a00; /* Darker shade on hover */
+}
+
+/* Add media query for responsive adjustments */
+@media (max-width: 768px) {
+    .service-section {
+        padding: 50px 0; /* Less padding on smaller screens */
+    }
+
+    .service-content h2 {
+        font-size: 2rem; /* Smaller font size for smaller screens */
+    }
+}
+
+
+
+
+
+
+
+.brands-section {
+    background: url('brands.png') no-repeat center center/cover;
+    padding: 5rem ; /* Adjust the padding to fit your design */
+    color: #ffffff; /* Text color */
+    text-align: center; /* Center align the text */
+    position: relative; /* For positioning elements inside */
+}
+
+.brands-content h2 {
+    font-size: 3rem; /* Large font size for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+    text-transform: uppercase; /* UPPERCASE text */
+    letter-spacing: -1.2px; /* Custom letter spacing */
+    font-family: 'Lexend Zetta', sans-serif; /* Custom font family */
+}
+
+
+
+/* Add media query for responsive adjustments */
+@media (max-width: 768px) {
+    .brands-section {
+        padding: 50px 0; /* Less padding on smaller screens */
+    }
+
+    .brands-content h2 {
+        font-size: 2rem; /* Smaller font size for smaller screens */
+    }
+}
+/* Responsive logo size */
+.carousel-caption img.slider-logo {
+    width: 50%; /* adjust this percentage based on your design needs */
+    max-width: 200px; /* maximum size of the logo */
+}
+
+@media (max-width: 768px) {
+    .carousel-caption img.slider-logo {
+        width: 70%; /* larger percentage for smaller screens */
+        max-width: 150px; /* smaller maximum size for mobile devices */
+    }
+}
+/* Responsive text size */
+.carousel-caption h5 {
+    font-size: 2vw; /* size relative to the width of the viewport */
+}
+
+.carousel-caption p {
+    font-size: 1.5vw;
+}
+
+@media (max-width: 768px) {
+    .carousel-caption h5 {
+        font-size: 4vw; /* larger text on smaller screens */
+    }
+
+    .carousel-caption p {
+        font-size: 3vw;
+    }
+}
+.carousel-caption .btn {
+    padding: 0.5rem 1rem; /* Default padding */
+    font-size: 1.25rem; /* Default font size */
+}
+
+@media (max-width: 768px) {
+    .carousel-caption .btn {
+        padding: 0.4rem 0.8rem; /* Smaller padding for smaller screens */
+        font-size: 1rem; /* Smaller font size */
+    }
+}
+/* Responsive logo size */
+.carousel-caption img.slider-logo {
+    width: 30%; /* Adjust the percentage based on design needs */
+    max-width: 180px; /* Maximum size of the logo */
+    min-width: 100px; /* Minimum size to prevent disappearing */
+}
+
+/* Responsive text size */
+.carousel-caption h5 {
+    font-size: calc(1.5vw + 1rem); /* Responsive size calculation */
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    font-size: calc(1vw + 0.5rem); /* Responsive size calculation */
+}
+
+/* Responsive buttons */
+.carousel-caption .btn {
+    padding: 0.5rem 1rem; /* Default padding */
+    font-size: calc(0.8vw + 0.6rem); /* Responsive font size calculation */
+}
+
+@media (max-width: 768px) {
+    .carousel-caption img.slider-logo {
+        width: 50%;
+    }
+    .carousel-caption h5 {
+        font-size: calc(4vw + 0.5rem);
+    }
+    .carousel-caption p {
+        font-size: calc(3vw + 0.4rem);
+    }
+    .carousel-caption .btn {
+        padding: 0.4rem 0.8rem;
+        font-size: calc(1.2vw + 0.5rem);
+    }
+}
